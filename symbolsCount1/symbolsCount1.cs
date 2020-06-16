@@ -16,7 +16,7 @@ namespace symbolsCount1
             string symb = "536";//скрока с искомыми символами
             int count = 0;//счетчик
             Console.WriteLine("String=" + realStr);//выводим в консоль искомую строку
-            foreach (Char c in symb)//посимволньно сравниваем две стоки
+            foreach (Char c in symb)//посимволньно сравниваем две стоки 
             {
                 foreach (Match m in Regex.Matches(realStr, c.ToString()))//если символы совпадают то увеличиваем счетчик на 1
                     count++;
